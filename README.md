@@ -1,8 +1,9 @@
+<div align="center">
+ 
 # Old Strike Trigger Bot
 
 Trigger bot for Old Strike using Windows API to read memory and simulate mouse input.
 
-<div align="center">
  
 ```txt
 This project is for educational and research purposes only.
