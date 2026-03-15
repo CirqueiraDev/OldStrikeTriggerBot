@@ -1,2 +1,58 @@
-# OldStrikeTriggerBot
-This repository is a simple trigger bot for the game Old Strike.
+# Trigger Bot
+
+Reads a memory value from a running game process and holds or releases the left mouse button accordingly.
+
+## Requirements
+
+- Windows x64
+- GCC via MSYS2 (mingw-w64-ucrt-x86_64-gcc)
+
+## Configuration
+
+Edit `config.h` to match your target:
+
+| Constant | Description |
+|---|---|
+| `PROCESS_NAME` | Target process executable name |
+| `MODULE_NAME` | Module to read the base address from |
+| `BASE_OFFSET` | Offset from the module base |
+| `OFFSETS` | Pointer chain offsets |
+| `POLL_INTERVAL_MS` | Polling interval in milliseconds |
+
+## Building
+
+```bash
+g++ -O2 -std=c++17 -o triggerbot.exe main.cpp memory.cpp process.cpp mouse.cpp -luser32 -lpsapi
+```
+
+## Usage
+
+Run as Administrator, then launch the executable:
+
+```bash
+triggerbot.exe
+```
+
+Press `Ctrl+C` to stop.
+
+## Project Structure
+
+```
+mouseclick/
+├── config.h       # Constants and pointer chain configuration
+├── process.h/cpp  # Finds the target process by name
+├── memory.h/cpp   # Memory reading and pointer chain resolution
+├── mouse.h/cpp    # Left mouse button input via SendInput
+└── main.cpp       # Main loop
+```
+
+## Python Version
+ 
+A Python version (`triggerbot.py`) is also available in the repository. It requires `pymem` and `pyautogui` and works the same way, but is slower and depends on a Python installation. The C++ version is recommended for better performance and no external dependencies.
+ 
+To run the Python version:
+ 
+```bash
+pip install pymem pyautogui
+python triggerbot.py
+```
