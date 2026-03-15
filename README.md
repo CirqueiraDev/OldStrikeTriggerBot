@@ -2,6 +2,17 @@
 
 Trigger bot for Old Strike using Windows API to read memory and simulate mouse input.
 
+<div align="center">
+ 
+```txt
+This project is for educational and research purposes only.
+The author does not condone cheating or violating the terms of service of any software.
+Any misuse of this code is the sole responsibility of the user.
+```
+</div>
+
+<br>
+
 ## Requirements
 
 - Windows x64
@@ -38,7 +49,7 @@ Press `Ctrl+C` to stop.
 ## Project Structure
 
 ```
-mouseclick/
+triggerbot/
 ├── config.h       # Constants and pointer chain configuration
 ├── process.h/cpp  # Finds the target process by name
 ├── memory.h/cpp   # Memory reading and pointer chain resolution
