@@ -1,4 +1,4 @@
-# Trigger Bot
+# Old Strike Trigger Bot
 
 Trigger bot for Old Strike using Windows API to read memory and simulate mouse input.
 
