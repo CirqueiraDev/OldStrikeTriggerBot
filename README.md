@@ -1,6 +1,6 @@
 # Trigger Bot
 
-Reads a memory value from a running game process and holds or releases the left mouse button accordingly.
+Trigger bot for Old Strike using Windows API to read memory and simulate mouse input.
 
 ## Requirements
 
