@@ -5,14 +5,12 @@
 Trigger bot for Old Strike using Windows API to read memory and simulate mouse input.
 
  
-```txt
+<pre>
 This project is for educational and research purposes only.
 The author does not condone cheating or violating the terms of service of any software.
 Any misuse of this code is the sole responsibility of the user.
-```
+</pre>
 </div>
-
-<br>
 
 ## Requirements
 
